@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="stylesheet1.css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="クロロの技術、人物についてを題材にしたポートフォリオです。">
+  <meta name="keywords" content="ポートフォリオ WEB制作 クロロ ラーメン ゲーム">
+  <title>Kurodaについて</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1 class="align_center">ポートフォリオ</h1>
+      <h3 class="align_center">- Kuroro -</h3>
+    </div>
+
+    <div id="nav">
+      <ul>
+        <li><a href="#profile">プロフィール</a></li>
+        <li><a href="#workExperience">職歴</a></li>
+        <li><a href="#skill">スキル</a></li>
+        <li><a href="#hobby">趣味</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="content-wrapper align_center">
+
+    <!-- プロフィール -->
+    <div id="profile">
+      <h1>【プロフィール】</h1>
+      <div>
+        <img src="kuroda1.jpg" alt="クロロの写真" >
+      </div>
+      <div>
+        <p>名前：クロロ</p>
+        <p><a href="https://twitter.com/"><i class="fab fa-twitter">Twitter</i></a> <a href="https://www.youtube.com/"><i class="fab fa-youtube">YouTube</i></a> <a href="https://ja-jp.facebook.com/"><i class="fab fa-facebook">Facebook</i></a></p>
+        <p>年齢：</p>
+        <p>出身地：</p>
+        <p>最終学歴：学部卒業</p>
+      </div>
+    </div>
+    
+    <div id="hobby">
+      <h1>【趣味】</h1>
+      <div>
+        <img class="ramen" src="ramen_rekishi.jpeg" alt="ラーメン">
+        <p>ラーメン</p>
+      </div>
+      <div>
+        <img src="famicom.jpg" alt="ファミコン">
+        <p>ゲーム</p>
+      </div>
+      <div>
+        <img src="kamoriver.jpg" alt="河川敷">
+        <p>散歩</p>
+      </div>
+    </div>
+
+    <!-- 職歴 -->
+    <div id="workExperience">
+      <h1>【職歴】</h1>
+      <table border="1" style="table-layout:auto">
+        <tbody>
+          <tr>
+            <th style="background:rgb(238, 236, 236)">年月</th>
+            <th style="background:rgb(238, 236, 236)">会社</th>
+            <th style="background:rgb(238, 236, 236)">概要</th>
+          </tr>
+          <tr>
+            <td>2012.4 ~ 2015.5</td>
+            <td>株式会社</td>
+            <td>機械工具の配送</td>
+          </tr>
+          <tr>
+            <td>2015.6 ~ 2016.9</td>
+            <td>株式会社</td>
+            <td>プログラミング〜テストを担当</td>
+          </tr>
+          <tr>
+            <td>2016.10 ~ 2018.8</td>
+            <td>株式会社</td>
+            <td>伝動機の代理店にて営業</td>
+          </tr>
+          <tr>
+            <td>2018.10 ~ 2020.2</td>
+            <td>株式会社</td>
+            <td>塗料卸売会社にて営業</td>
+          </tr>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div><!--  職歴  -->
+    <hr style="border: dotted 2px ;">
+    <!-- スキル -->
+    <div id="skill">
+      <h1>【スキル】</h1>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>COBOL</li>
+      </ul>
+    </div>
+
+    <div id="contact">
+      <fieldset>
+        <legend>
+          <h1>【お問い合わせ】</h1>
+        </legend>
+        <form method="post" action="confirm.php">
+          <input class="name" type="text" name="lastName" placeholder="姓" size="20" style="width:2;" >
+          <!-- <br> -->
+          <input class="name" type="text" name="firstName" placeholder="名">
+          <br>
+          <label>男<input class="sex" type="radio" name="sex" value="man"></label>
+          <!-- <br> -->
+          <label>女<input class="sex" type="radio" name="sex" value="woman"></label>
+          <br>
+          <input type="email" name="mailaddres" size="50" placeholder="メールアドレス"><br>
+          <select name="contactType">
+            <br>
+            <option value="noSelect">お問い合わせの種類</option>
+            <option value="work">スキルについて</option>
+            <option value="web">経歴について</option>
+            <option value="hobby">趣味について</option>
+            <option value="other">その他について</option>
+          </select>
+          <br>
+          <textarea name="contact" cols="50" rows="7" placeholder="お問い合わせ内容"></textarea>
+          <br>
+          <input type="submit" value="送信">
+        </form>
+      </fieldset>
+    </div> <!-- contact -->
+  </div>  
+  <footer>  
+    <a href="#">トップに戻る</a>
+    <p>Designed by Kensho Kuroda</p>
+  </footer>
+</body>
