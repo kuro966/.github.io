@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+
+/* common */
+
+header{
+  text-align: center;
+}
+
+
+body {
+  width:100%;
+  margin:0 auto;
+} 
+
+ul {
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.align_center{
+  text-align: center;
+}
+
+#nav {
+  height: 50px;
+  line-height: 50px;
+}
+
+#nav ul{
+  margin:0 auto;
+  padding: 0;
+}
+
+#nav ul li {
+  display:inline-block;
+  width: 19%;
+  border: 1px solid black;
+}
+
+#nav ul li a {
+  display: block;
+  background: #f7f7f7;
+}
+
+#nav ul li:hover,#nav ul li a:hover {
+  background: #5d8ac1;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+#profile {
+  background: #f7f7f7;
+  text-align: center;
+}
+#profile div {
+  display: inline-block;
+}
+
+#profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.fab {
+  font-weight: bold;
+  padding : 4px;
+  border-radius: 4px;
+}
+
+.fa-twitter {
+  color: #fff;
+  background:#00acee;
+}
+
+.fa-youtube {
+  color: #fff;
+  background: #c4302b;
+}
+
+.fa-facebook{
+  color: #fff;
+  background: #3b5998;
+}
+
+
+#hobby img {
+  width: 300px;
+  height: 200px;
+}
+
+#hobby div {
+  display: inline-block;
+}
+
+#workExperience {
+  background: #ebf8eb;
+}
+
+table {
+  margin: 0 auto;
+}
+
+table th,table td {
+  padding: 5px;
+}
+
+#contact {
+  background: rgb(248, 231, 235);
+}
+
+#contact input,#contact select {
+  margin-bottom: 10px;
+}
+
+#contact input,#contact select {  
+  width:35%;
+  height:40px;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+#contact .name {
+  width: 17%;
+}
+
+#contact .sex {
+  width: 70px;
+}
+
+label {
+  line-height:40px;
+  height: 40px;
+}
+
+textarea {
+  width:35%;
+  border-radius: 10px;
+}
+
+footer {
+  background: rgb(236, 235, 235);
+  height: 100px;
+  line-height: 100px;
+}
+
+footer p {
+  float: right;
+}
+
+/* モバイル版 */
+@media (max-width: 670px) {
+  #nav ul li {
+     flex: left;
+     width: 32%;
+   }
+
+   #nav ul {
+    flex-wrap: wrap;
+    width: 100%;
+   }
+   
+   #profile {
+     margin-top: 80px;
+   }
+ }
+
